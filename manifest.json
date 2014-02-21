@@ -1,0 +1,47 @@
+{
+	"name": "Pretty SEC",
+	"version": "1.0.0",
+	"manifest_version": 2,
+
+    "icons": {
+        "16": "img/logo19.png",
+        "48": "img/logo38.png",
+        "128": "img/logo38.png"
+    },
+
+	"page_action": {
+		"default_icon": {
+            "19": "img/logo19.png",
+            "38": "img/logo38.png"
+        },
+		"default_title": "Pretty SEC"
+	},
+
+	"background": {
+        "scripts": ["js/background.js"],
+		"persistent": true
+	},
+
+	"content_scripts": [
+		{
+			"matches": [
+                "http://www.sec.gov/Archives/edgar/data/*/*/*10k.htm",
+                "http://www.sec.gov/Archives/edgar/data/*/*/*10q.htm"
+			],
+			"css": ["css/pretty_sec.css"],
+			"js": [
+				"js/pretty_sec.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": [
+		"css/pretty_sec.css"
+	],
+	"permissions": [
+		"tabs",
+		"webNavigation",
+        "http://www.sec.gov/Archives/edgar/data/.*10[kq].htm"
+	]
+}
+	

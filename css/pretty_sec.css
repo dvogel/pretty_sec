@@ -1,0 +1,58 @@
+body {
+  @import url(http://fonts.googleapis.com/css?family=Inika:400,700&subset=latin,latin-ext);
+  font-family: 'Inika', serif;
+  letter-spacing: 1px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered > * {
+  margin: 0 auto;
+}
+
+.aligned-left {
+  text-align: left;
+}
+
+.aligned-right {
+  text-align: right;
+}
+
+div.centered > span.bolded {
+}
+
+.bordered-on-bottom {
+  border-bottom: 1px solid black;
+}
+
+.text9 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text10 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+table > tbody > tr > td > div.text9 > span.text9 {
+  line-height: 19px;
+}
+
+table > tbody > tr > td > div.text10 > span.text10 {
+  line-height: 24px;
+}
+
+table > tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+table > tbody tr:nth-child(even) {
+  background-color: #dadada;
+}
