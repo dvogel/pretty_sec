@@ -96,7 +96,6 @@ var convert_element_types = function () {
 
 var inject_stylesheet = function () {
     var link = document.getElementById('pretty-sec-css-link');
-    console.log('chrome.runtime.getURL', chrome.runtime.getURL('css/pretty_sec.css'));
     if (link == null) {
         link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');

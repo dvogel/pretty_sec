@@ -36,7 +36,15 @@
 		}
 	],
 	"web_accessible_resources": [
-		"css/pretty_sec.css"
+		"css/pretty_sec.css",
+        "fonts/Arvo/Arvo-Regular.ttf",
+        "fonts/Arvo/Arvo-Italic.ttf",
+        "fonts/Arvo/Arvo-Bold.ttf",
+        "fonts/Arvo/Arvo-BoldItalic.ttf",
+        "fonts/Inika/Inika-Regular.ttf",
+        "fonts/Inika/Inika-Bold.ttf",
+        "fonts/Inconsolata/Inconsolata-Regular.ttf",
+        "fonts/Inconsolata/Inconsolata-Bold.ttf"
 	],
 	"permissions": [
 		"tabs",
